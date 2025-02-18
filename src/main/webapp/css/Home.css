@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.search-bar {
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+.search-bar form {
+    display: flex; /* Align inputs horizontally */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 2px solid #007BFF; /* Change to your preferred border color */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    outline: none; /* Remove outline */
+    font-size: 16px; /* Increase font size */
+    width: 250px; /* Set a fixed width */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #888; /* Placeholder color */
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px 20px;
+    border: none; /* Remove border */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.weather-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.city {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.temperature {
+  font-size: 40px;
+  color: #0056B3;
+  font-weight: bold;
+}
+
+.condition {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.weather-details {
+  font-size: 14px;
+  color: #333333;
+}
+
+.weather-details p {
+    margin: 5px 0; /* Space between details */
+    font-size: 16px; /* Standard font size */
+    color: #666; /* Lighter gray for less emphasis */
+}
+
+.weather-details span {
+    font-weight: bold; /* Make values bold */
+    color: #333; /* Dark color for values */
+}
+.weather-details p {
+  margin: 5px 0;
+}
+.local-time {
+    font-size: 16px; /* Standard font size */
+    color: #555; /* Slightly darker gray */
+    margin: 10px 0; /* Space around the local time */
+}
+
+.local-time span {
+    font-weight: bold; /* Make the time bold */
+    color: #333; /* Dark color for the time */
+}
+
